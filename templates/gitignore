@@ -1,0 +1,13 @@
+# qmd search index (generated locally, never commit)
+.qmd/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Obsidian workspace state (keep the vault, drop the per-machine UI state)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json

@@ -1,0 +1,38 @@
+{
+  "name": "llmwiki",
+  "version": "0.1.0",
+  "description": "CLI for the LLM Wiki pattern: scaffold a wiki repo and lint it against the CLAUDE.md contract.",
+  "type": "module",
+  "bin": {
+    "llmwiki": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "templates",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "tsc -p tsconfig.test.json && node --test \"dist-test/test/*.test.js\"",
+    "lint:self": "node dist/cli.js lint --root .",
+    "start": "node dist/cli.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "llm",
+    "wiki",
+    "documentation",
+    "knowledge-base",
+    "lint",
+    "qmd",
+    "claude"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}

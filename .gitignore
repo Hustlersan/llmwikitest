@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dist-test/
+
+# qmd search index (generated locally, never commit)
+.qmd/
+
+# OS / editor cruft
+.DS_Store
+*.swp
+.idea/
+.vscode/
